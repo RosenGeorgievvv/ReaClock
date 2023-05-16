@@ -15,3 +15,14 @@ h1{
   font-weight: 500;
   color: #71d704
 }
+.App{
+  width: 25em;
+  height: 12em;
+  background: #0b0d0e;
+  border-radius: 20px;
+}
+.App, .screen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
