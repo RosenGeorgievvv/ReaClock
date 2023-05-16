@@ -12,7 +12,12 @@ function App() {
     }
   }
 
-  const 
+  const tick = () =>{
+    const date = new Date();
+    const hour = date.getHours();
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
+  }
 
 useEffect(() =>{
   //interval
