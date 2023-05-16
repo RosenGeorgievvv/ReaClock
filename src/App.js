@@ -17,6 +17,8 @@ function App() {
     const hour = date.getHours();
     const minutes = date.getMinutes();
     const seconds = date.getSeconds();
+
+    setTime(formatTime(hour) + hour + ':' + formatTime(minutes) + minutes + ':' + formatTime(seconds) + seconds);
   }
 
 useEffect(() =>{
@@ -30,7 +32,9 @@ useEffect(() =>{
 
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <div className='screen'>
+        <h1 className='timer'>{time}</h1>
+      </div>
     </div>
   );
 }
